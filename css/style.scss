@@ -1,0 +1,398 @@
+body {
+    height: 4200px;
+}
+.house1_wrap, .house2_wrap, .house3_wrap, .house4_wrap, .house5_wrap, .space {
+    width: 100vw;
+    height: 70vh;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.space {background-color: white;}
+
+.house1, .house2, .house3, .house4, .house5 {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    box-sizing: content-box;
+}
+
+.text {
+    text-align: center;
+    /* margin: auto; */
+    padding: 10px;
+    width: 300px;
+    height: 10px;
+    color: darkgrey;
+}
+
+.house1 {
+    position: static;
+    .base {
+        width: 250px;
+        height: 230px;
+        background-color: burlywood;
+        left: 70px;
+        right: 100px;
+        top: 140px;
+        z-index: 20;
+    
+    }
+    
+    .roof {
+        width: 180px;
+        height: 180px;
+        background-color: rgb(184, 140, 84);
+        border-radius: 5px;
+        left: 105px;
+        bottom: 180px;
+        transform: rotate(45deg);
+        z-index: 10;
+    }
+    
+    .door {
+        width: 80px;
+        height: 170px;
+        background-color: rgb(134, 105, 67);
+        bottom: 210px;
+        left: 100px;
+        z-index: 30;
+    }
+    
+    .window {
+        width: 70px;
+        height: 70px;
+        background-color: rgb(73, 126, 151);
+        border: 8px solid rgb(131, 119, 119);
+        border-radius: 5px;
+        bottom: 370px;
+        left: 200px;
+        z-index: 40;
+    }
+    
+    .chimney {
+        width: 30px;
+        height: 60px;
+        background-color: rgb(134, 105, 67);
+        border-radius: 5px;
+        border: 4px solid gray;
+        bottom: 610px;
+        left: 260px;
+    }
+
+    .back {
+        position: static;
+        width: 500px;
+        height: 200px;
+        background-color: lightsteelblue;
+    }
+
+    .floor {
+        position: static;
+        width: 500px;
+        height: 300px;
+        background-color: rgb(199, 243, 199);
+    }
+    
+}
+
+.house2 {
+    position: relative;
+    .base {
+        position: relative;
+        width: 250px;
+        height: 230px;
+        background-color: burlywood;
+        left: 70px;
+        right: 100px;
+        top: 140px;
+        z-index: 30;
+    
+    }
+    
+    .roof {
+        position: relative;
+        width: 180px;
+        height: 180px;
+        background-color: rgb(184, 140, 84);
+        border-radius: 5px;
+        left: 105px;
+        bottom: 180px;
+        transform: rotate(45deg);
+        z-index: 20;
+    }
+    
+    .door {
+        position: relative;
+        width: 80px;
+        height: 170px;
+        background-color: rgb(134, 105, 67);
+        bottom: 210px;
+        left: 100px;
+        z-index: 30;
+    }
+    
+    .window {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        background-color: rgb(73, 126, 151);
+        border: 8px solid rgb(131, 119, 119);
+        border-radius: 5px;
+        bottom: 370px;
+        left: 200px;
+        z-index: 40;
+    }
+    
+    .chimney {
+        position: relative;
+        width: 30px;
+        height: 60px;
+        background-color: rgb(134, 105, 67);
+        border-radius: 5px;
+        border: 4px solid gray;
+        bottom: 610px;
+        left: 260px;
+        z-index: 10;
+    }
+
+    .back {
+        position: relative;
+        bottom: 734px;
+        width: 500px;
+        height: 200px;
+        background-color: lightsteelblue;
+    }
+
+    .floor {
+        position: relative;
+        bottom: 734px;
+        width: 500px;
+        height: 300px;
+        background-color: rgb(199, 243, 199);
+    }
+    
+}
+
+.house3 {
+    position: absolute;
+    left: 600px;
+    .base {
+        position: absolute;
+        width: 250px;
+        height: 230px;
+        background-color: burlywood;
+        left: 70px;
+        right: 100px;
+        top: 140px;
+        z-index: 20;
+    
+    }
+    
+    .roof {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        background-color: rgb(184, 140, 84);
+        border-radius: 5px;
+        left: 105px;
+        bottom: 270px;
+        transform: rotate(45deg);
+        z-index: 10;
+    }
+    
+    .door {
+        position: absolute;
+        width: 80px;
+        height: 170px;
+        background-color: rgb(134, 105, 67);
+        bottom: 130px;
+        left: 100px;
+        z-index: 30;
+    }
+    
+    .window {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background-color: rgb(73, 126, 151);
+        border: 8px solid rgb(131, 119, 119);
+        border-radius: 5px;
+        top: 200px;
+        left: 200px;
+        z-index: 40;
+    }
+    
+    .chimney {
+        position: absolute;
+        width: 30px;
+        height: 60px;
+        background-color: rgb(134, 105, 67);
+        border-radius: 5px;
+        border: 4px solid gray;
+        bottom: 380px;
+        left: 260px;
+    }
+
+    .back {
+        width: 500px;
+        height: 200px;
+        background-color: lightsteelblue;
+    }
+
+    .floor {
+        width: 500px;
+        height: 300px;
+        background-color: rgb(199, 243, 199);
+    }
+    
+}
+
+.house4 {
+    position: fixed;
+    .base {
+        position: fixed;
+        left: 1300px;
+        right: 100px;
+        width: 250px;
+        height: 230px;
+        background-color: burlywood;
+        bottom: 300px;
+        z-index: 20;
+    
+    }
+    
+    .roof {
+        position: fixed;
+        left: 1335px;
+        bottom: 440px;
+        width: 180px;
+        height: 180px;
+        background-color: rgb(184, 140, 84);
+        border-radius: 5px;
+        transform: rotate(45deg);
+        z-index: 10;
+    }
+    
+    .door {
+        position: fixed;
+        width: 80px;
+        height: 170px;
+        background-color: rgb(134, 105, 67);
+        bottom: 300px;
+        left: 1335px;
+        z-index: 30;
+    }
+    
+    .window {
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        background-color: rgb(73, 126, 151);
+        border: 8px solid rgb(131, 119, 119);
+        border-radius: 5px;
+        top: 350px;
+        left: 1435px;
+        z-index: 40;
+    }
+    
+    .chimney {
+        position: fixed;
+        width: 30px;
+        height: 60px;
+        background-color: rgb(134, 105, 67);
+        border-radius: 5px;
+        border: 4px solid gray;
+        bottom: 560px;
+        left: 1480px;
+    }
+    
+}
+
+.house5_wrap{
+    background: rgb(87,177,217);
+background: linear-gradient(0deg, rgba(87,177,217,1) 4%, rgba(255,255,255,1) 81%);
+}
+
+.house5 {
+    position: sticky;
+    top: 0px;
+    .base {
+        position: absolute;
+        width: 250px;
+        height: 230px;
+        background-color: burlywood;
+        left: 70px;
+        right: 100px;
+        top: 140px;
+        z-index: 20;
+    
+    }
+    
+    .roof {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        background-color: rgb(184, 140, 84);
+        border-radius: 5px;
+        left: 105px;
+        bottom: 270px;
+        transform: rotate(45deg);
+        z-index: 10;
+    }
+    
+    .door {
+        position: absolute;
+        width: 80px;
+        height: 170px;
+        background-color: rgb(134, 105, 67);
+        bottom: 130px;
+        left: 100px;
+        z-index: 30;
+    }
+    
+    .window {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background-color: rgb(73, 126, 151);
+        border: 8px solid rgb(131, 119, 119);
+        border-radius: 5px;
+        top: 200px;
+        left: 200px;
+        z-index: 40;
+    }
+    
+    .chimney {
+        position: absolute;
+        width: 30px;
+        height: 60px;
+        background-color: rgb(134, 105, 67);
+        border-radius: 5px;
+        border: 4px solid gray;
+        bottom: 380px;
+        left: 260px;
+    }
+
+    .back {
+        position: absolute;
+        width: 500px;
+        height: 200px;
+        background-color: lightsteelblue;
+    }
+
+    .floor {
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        background-color: rgb(199, 243, 199);
+        top: 200px;
+    }
+    
+}
+
+
